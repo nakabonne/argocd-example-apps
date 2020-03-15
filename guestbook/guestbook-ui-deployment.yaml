@@ -16,5 +16,8 @@ spec:
       containers:
       - image: nakabonne/hello-server
         name: guestbook-ui
+        env:
+          - name: PORT
+            value: "80"
         ports:
         - containerPort: 80
